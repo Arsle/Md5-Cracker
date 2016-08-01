@@ -122,27 +122,7 @@ $md5=new md5();
 
 $md5ler=file_get_contents($argv[1]);
 $md5ler=explode(PHP_EOL,$md5ler);
-//$sayi=0;
 
-//$zaman=time();
-//$uzunluk=count($md5ler);
-
-/*for($i=0;$i<=($uzunluk-1);$i++)
-{
-    if($sayi==20){
-    $sleepzaman=60-(time()-$zaman);
-    echo  chr(27) ."[0;37m $sleepzaman Saniye Uykuya Gecti...". chr(27) . "[0m";
-    echo "\n------------------------------------------\n";
-    sleep($sleepzaman);
-    $sayi=0;
-    $i-=1;
-    $zaman=time();
- }
- else {
-     $sayi+=1;
-     $md5->curlbaglan($md5ler[$i]);
- }
-}*/
  
  foreach($md5ler as $md5kir)
  {
